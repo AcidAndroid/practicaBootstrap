@@ -23,4 +23,8 @@ MD 768-991
 LG 992-1199
 XL 1200>
 
+Los tamaños al ser mobile first afectan desde la resolucion mas pequeña a las masgrande.
+Es decir no hace falta espcificar desde xs hasta xl si siempre va a tener la misma apariencia.
+Cuando se necesita que en cierta resolucion cambie entonces SI se debe espcificar
+
 *colores importantes
