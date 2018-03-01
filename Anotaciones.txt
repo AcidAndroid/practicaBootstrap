@@ -15,3 +15,12 @@ Trabaja con una rejilla de 12 cajas
 col-xs-#
 # es el numero de 1-12 o con divissores de 12 que son el numero de columnas que 
 se van a usar
+
+*Tamaño de grud para resolicuiones
+Xs <575
+SM 576-767
+MD 768-991
+LG 992-1199
+XL 1200>
+
+*colores importantes
