@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./node_modules\bootstrap\dist\css\bootstrap.css">
+    <title>Alineacion con bootstrap 4</title>
+</head>
+<body>
+    <style>
+        body div[class="row"] {
+            margin-bottom: 50px;
+        }
+        
+        .borde {
+            background-color: gray;
+            height: auto;
+        }
+        
+        .borde1 {
+            background-color: aquamarine;
+            text-align: center;
+            height: 50px;
+        }
+        
+        .borde2 {
+            height: 50px;
+            text-align: center;
+            background-color: olivedrab;
+        }
+        
+        .borde3 {
+            height: 50px;
+            text-align: center;
+            background-color: orangered;
+        }
+        .borde4 {
+            height: 50px;
+            text-align: center;
+            background-color: yellow;
+        }
+    </style>
+
+    <div class="container ">
+        <div class="row d-block">
+            <div class="float-sm-right">UNO</div> <br>
+            <div class="float-md-right">DOS</div> <br>
+            <div class="float-lg-right">TRES</div> <br>
+            <div class="float-xl-right">CUATRO</div> <br>
+            <div class="float-none">CNCO</div>
+        </div>
+
+        <div><br></div>
+
+        <div class="row">
+                <div class="col">
+                    <div>
+                        <span class="float-left">izquierda</span>
+                        <span class="float-right">DERECHA</span>
+                    </div>                   
+                </div>        
+            </div>
+            <div></div>
+            <div class="row ">
+                    <div class="col border">
+                        <div>
+                            <span class="float-left">izquierda</span>
+                            <span class="float-right">DERECHA</span>
+                        </div>                   
+                    </div>  
+                    <div class="col border">
+                            <div>
+                                <span class="float-left">izquierda</span>
+                                <span class="float-right">DERECHA</span>
+                            </div>                   
+                        </div>          
+            </div>
+            <div><br></div>
+
+        <div class="row d-block">
+            <div class="mx-auto border" style="width: 0px;">CENTRO1</div>
+        </div>
+        <div>ALINEACION HORIZONTAL<br></div>
+        <div class="row justify-content-start borde1">
+                <div class=" col-4 borde2">
+                    <p>UNO</p>
+                </div>
+                <div class="col-4 borde3">
+                        <p>DOS</p>
+                    </div>
+            </div>
+            <div><br></div>
+            <div class="row justify-content-start borde1">
+                    <div class=" col-4 borde2">
+                        <p>UNO</p>
+                    </div>
+                    <div class="col-4 borde3">
+                            <p>DOS</p>
+                        </div>
+                </div>
+                <div><br></div>
+                <div class="row justify-content-center borde1">
+                    <div class=" col-4 borde2">
+                        <p>UNO</p>
+                    </div>
+                    <div class="col-4 borde3">
+                            <p>DOS</p>
+                        </div>
+                </div>
+                <div><br></div>
+                <div class="row justify-content-end borde1">
+                    <div class=" col-4 borde2">
+                        <p>UNO</p>
+                    </div>
+                    <div class="col-4 borde3">
+                            <p>DOS</p>
+                    </div>
+                </div>
+                <div><br></div>
+                <div class="row justify-content-between borde1">
+                    <div class=" col-4 borde2">
+                        <p>UNO</p>
+                    </div>
+                    <div class="col-4 borde3">
+                            <p>DOS</p>
+                    </div>
+                </div>
+
+                <div><br></div>
+                <div class="row justify-content-between borde1">
+                    <div class=" col-3 borde2">
+                        <p>UNO</p>
+                    </div>
+                    <div class="col-3 borde3">
+                            <p>DOS</p>
+                    </div>
+                    <div class="col-3 borde4">
+                            <p>TRES</p>
+                    </div>
+                </div>
+
+                <div><br></div>
+                <div class="row justify-content-around borde1">
+                    <div class=" col-3 borde2">
+                        <p>UNO</p>
+                    </div>
+                    <div class="col-3 borde3">
+                            <p>DOS</p>
+                    </div>
+                    <div class="col-3 borde4">
+                            <p>TRES</p>
+                    </div>
+                </div>
+
+                <div>ALINEACION VERTICAL<br></div>
+                <div class="row align-items-center borde1" style="height: 100px;">
+                    <div class=" col-3 borde4">
+                        <p>UNO</p>
+                    </div>
+                    <div class="col-3 borde3">
+                            <p>DOS</p>
+                    </div>
+                    <div class="col-3 borde2">
+                            <p>TRES</p>
+                    </div>
+                </div>
+                <div><br></div>
+                <div class="row align-items-start borde1" style="height: 100px;">
+                        <div class=" col-3 borde4">
+                            <p>UNO</p>
+                        </div>
+                        <div class="col-3 borde3">
+                                <p>DOS</p>
+                        </div>
+                        <div class="col-3 borde2">
+                                <p>TRES</p>
+                        </div>
+                    </div>
+                    <div><br></div>
+                    <div class="row align-items-end borde1" style="height: 100px;">
+                            <div class=" col-3 borde4">
+                                <p>UNO</p>
+                            </div>
+                            <div class="col-3 borde3">
+                                    <p>DOS</p>
+                            </div>
+                            <div class="col-3 borde2">
+                                    <p>TRES</p>
+                            </div>
+                        </div>
+                        <div>Alinaecion vertical por COLUMNA<br></div>
+                        <div class="row align-items-center borde1" style="height: 100px;">
+                                <div class=" col-3 borde2 align-self-start">
+                                    <p>UNO</p>
+                                </div>
+                                <div class="col-3 borde2">
+                                        <p>DOS</p>
+                                </div>
+                                <div class="col-3 borde2 align-self-end">
+                                        <p>TRES</p>
+                                </div>
+                            </div>
+
+                            <div class="row  borde1" style="height: 100px;">
+                                    <div class=" col-3 borde3 align-self-end">
+                                        <p>UNO</p>
+                                    </div>
+                                    <div class="col-3 borde3 align-self-center">
+                                            <p>DOS</p>
+                                    </div>
+                                    <div class="col-3 borde3 align-self-start">
+                                            <p>TRES</p>
+                                    </div>
+                                </div>
+        <div >FIJAR ELMENTOS<br></div>        
+
+                <div class="row  " >
+                    <div class="col-6 borde4 fixed-top">
+                        <p>Fijado</p>
+                    </div>
+                    
+                    <div class="col-6 borde4 fixed-bottom">
+                            <p>Fijado2</p>
+                        </div>
+
+                    <div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, fuga molestiae eius numquam dolores in rerum placeat tempora ex culpa laudantium maxime nobis, quas reprehenderit aliquid voluptates nam dignissimos doloremque.
+                        Reiciendis hic architecto magni vitae aspernatur esse, eveniet, explicabo temporibus non vel quisquam! Distinctio nostrum illum nisi officiis cum obcaecati minus illo cupiditate, eveniet sapiente vero a, tenetur soluta! Beatae.
+                        Perspiciatis quisquam tenetur in nisi ipsum neque. Repellendus, quam itaque. Cum totam velit, nostrum blanditiis voluptatum aspernatur placeat, fugiat voluptate beatae exercitationem nisi, accusamus praesentium ullam eum obcaecati dolor quae?
+                        Dolore voluptates asperiores, optio corporis accusantium consequatur blanditiis harum dolor unde quis quidem velit, modi error explicabo? Expedita corporis doloribus illum molestiae voluptates dolore hic alias reprehenderit optio veniam? Voluptates.
+                        Recusandae exercitationem aut, magni maiores quasi ducimus temporibus et reprehenderit, vitae animi fugiat quod odit adipisci dolorem vero excepturi velit optio minus dolorum facilis hic? Cupiditate harum laudantium qui minus.
+                        Architecto nihil nulla numquam error dignissimos suscipit maxime vitae fuga deleniti laudantium minima reprehenderit neque voluptatem libero, ipsam explicabo corrupti similique vel praesentium minus excepturi dolorum quae consequatur velit! Aperiam.</p>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae at labore sunt quae! Cum, dignissimos suscipit obcaecati architecto consequuntur iure ex ut aliquam saepe porro expedita nobis dolorem vitae atque.
+                            Est provident ipsam unde! Quod distinctio doloremque officiis dolor libero est atque consequuntur veritatis dolores maxime iure, incidunt inventore? Reiciendis vero, aperiam eius harum rerum in ex excepturi expedita aliquid?
+                            Ratione distinctio autem numquam impedit delectus dolor at voluptatum, maiores illo laborum, maxime alias ea dolorum, explicabo possimus officiis hic neque sequi. Exercitationem eos animi minus ipsum! Sint, harum ratione.
+                            Cumque ut aliquid dolorem praesentium. Fugiat nemo maiores quisquam nam. Ut repellat saepe sapiente, officia minus id accusantium labore provident laborum, molestiae officiis vero facilis illum distinctio maxime velit inventore.
+                            Maiores nobis aspernatur at ratione inventore nam, molestias necessitatibus expedita voluptate adipisci asperiores reprehenderit magni et quod sint id quae quam qui doloribus dolorem voluptatibus suscipit ullam sed? Voluptatem, qui.
+                            Sunt labore dolorem totam odio modi ratione consequatur, voluptatibus distinctio, debitis non corrupti laboriosam, quasi qui unde? Ab expedita voluptatum hic culpa sapiente, amet mollitia possimus accusamus officia, provident autem.
+                            Ex beatae neque ratione et delectus cum inventore culpa commodi. A ullam, consequatur tempora iusto iste quia incidunt praesentium officiis eos adipisci soluta error rem aperiam eius similique dolores ipsum?
+                            Tempore esse sed voluptates consequuntur, earum inventore aut et quasi nihil aspernatur eveniet. Recusandae, officia architecto error nam quam nihil consequatur corporis deserunt temporibus quaerat inventore voluptatem unde et magni!
+                            Nisi eius, consectetur eos temporibus blanditiis reprehenderit eligendi odit ad ducimus veniam sunt ex repellendus quam eaque recusandae quo corrupti facere facilis, exercitationem eveniet? Veritatis pariatur ullam ab harum ex!
+                            Esse, molestiae sint hic sunt eius voluptate, dolore voluptatum molestias obcaecati sit perspiciatis quis quae nam magnam repellendus libero reprehenderit. Voluptatem cupiditate est distinctio optio sint sed autem deleniti modi?
+                            Quisquam odit consequatur est quis itaque. Consequatur beatae quaerat iusto atque nulla numquam et voluptas, dignissimos quam eveniet facere reprehenderit, neque nihil corporis ipsa totam porro sint hic incidunt. A.
+                            Doloribus quisquam, nobis corrupti, quo nisi soluta, inventore eius quos aspernatur est totam? Iste doloremque natus fuga, impedit cumque dignissimos dolor exercitationem minus eum officiis blanditiis quasi esse culpa voluptatum.
+                            Magnam perferendis nobis quam nisi, sequi tempora hic exercitationem et. Quo in exercitationem ipsum molestiae itaque, eum, dolores alias quisquam corporis blanditiis porro nobis magni omnis expedita maiores iste modi!
+                            Temporibus quisquam molestiae quaerat id fugiat blanditiis repellendus architecto laudantium quas in eaque itaque adipisci voluptate fuga vero, corporis aliquam libero atque amet ipsa veritatis animi? Soluta esse eius exercitationem?
+                            Necessitatibus in dolorem iste eveniet maiores quos eum! Veritatis magni, et consequuntur possimus voluptatum omnis quibusdam facilis maxime eveniet enim magnam, inventore consectetur iusto! Labore optio dolores facilis itaque corporis.
+                        </p>
+                    </div>                  
+                </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -26,5 +26,29 @@ XL 1200>
 Los tamaños al ser mobile first afectan desde la resolucion mas pequeña a las masgrande.
 Es decir no hace falta espcificar desde xs hasta xl si siempre va a tener la misma apariencia.
 Cuando se necesita que en cierta resolucion cambie entonces SI se debe espcificar
+Graficamente es ver como una herencia desde el mas chico al mas grande
+
+xs>sm>md>lg>lg>xl
+
+Ejemplo:
+col-12 col-sm-12 col-md-6 col-lg-2 col-xl-2 d-none d-md-block
+se esta indicando el comportamiento para xs(solo col), sm md lg xl ya que en cada resolucion cambia, pero 
+con d-none indica que no se va amostrar desde xs sm y si se muestra hasta md
+
+col-4 col-xl-2 indica que para pantallas xl cambia a ocupar los 12 elementos del grid, 
+para los menors ocupa 4 espacios
+
+col-4 col-xl-2 d-md-none indica que apartir de pantallas mendianas no se muestra, para pantallas xl 
+cambia a ocupar los 12 elementos del grid,  para los menors ocupa 4 espacios. Para pantalla mendiana no se muestra
 
 *colores importantes
+primary
+secondary
+dark
+light
+danger
+warning
+succes
+info
+white
+
